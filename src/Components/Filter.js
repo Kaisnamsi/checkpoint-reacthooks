@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Filter = ({ titleFilter, ratingFilter, onTitleChange, onRatingChange }) => {
   return (
@@ -18,6 +19,7 @@ const Filter = ({ titleFilter, ratingFilter, onTitleChange, onRatingChange }) =>
           <option value="1">1 Star</option>
         </select>
       </label>
+      <Link to="/">Back to Home</Link>
     </div>
   );
 };
